@@ -1,10 +1,10 @@
 {
   "name": "shopping-cart",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,14 @@
     "express": "^4.16.4",
     "sequelize": "^5.2.12",
     "sqlite3": "^4.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subhankr12/shopping-cart-1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Subhankr12/shopping-cart-1/issues"
+  },
+  "homepage": "https://github.com/Subhankr12/shopping-cart-1#readme",
+  "description": ""
 }
