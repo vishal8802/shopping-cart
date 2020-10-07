@@ -118,6 +118,16 @@ app.post('/show_cart', async (req, res) => {
     res.send(cart)
 })
 
+app.get("/show_products_user", async (req, res) => {
+    let token = req.headers.token || "";
+    let user = token.decode("user");
+    let products = await Products.findAll({
+      include: [Vendors],
+      user: user,
+    });
+    res.send(products);
+  });
+
 db.sync({
         force: false
     })
